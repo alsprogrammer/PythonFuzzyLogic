@@ -3,7 +3,8 @@ The library for working with fuzzy logic in python
 
 ### What is this repository for? ###
 
-This library is developed to be used for modelling the fuzzy sets and fuzzy controllers. The library cab be used both in production and for educational purposes.
+This library is developed to be used for modelling the fuzzy sets and fuzzy controllers. The library cab be used both
+in production and for educational purposes.
 
 Version 0.1a
 

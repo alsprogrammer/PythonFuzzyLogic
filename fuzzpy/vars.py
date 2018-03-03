@@ -2,14 +2,31 @@ from fuzzpy.membership import TrapecFunc, TriFunc
 
 
 class FuzzyTerm:
+    """
+    A fuzzy term like the the weather is hot or the speed is slow
+    """
     def __init__(self, membership, variable):
+        """
+        Create new fuzzy term
+        :param membership: The membership function to describe the value of the variable as a fuzzy set
+        :param variable: The variable to describe the linguistic term of
+        """
         self.membership = membership
         self.variable = variable
 
     def __call__(self):
+        """
+        Compute the level
+        :return: level
+        """
         return self.membership(self.variable.value)
 
     def __and__(self, other):
+        """
+        Combine two terms with "and" condition
+        :param other: the term to combine with
+        :return: new membership function
+        """
         def ret_func(*d, **mp):
             a = float(self(*d, **mp))
             b = float(other(*d, **mp))
@@ -17,6 +34,11 @@ class FuzzyTerm:
         return ret_func
 
     def __or__(self, other):
+        """
+        Combine two terms with "or" condition
+        :param other: the term to combine with
+        :return: new membership function
+        """
         def ret_func(*d, **mp):
             a = float(self(*d, **mp))
             b = float(other(*d, **mp))
@@ -25,7 +47,16 @@ class FuzzyTerm:
 
 
 class FuzzyRule:
+    """
+    A fuzzy rule that works as an membership function
+    """
     def __init__(self, antecedents, variable, membership):
+        """
+        Create new fuzzy rule
+        :param antecedents: A list of (or just the one) antecedents for the rule. Can be associated with different variables
+        :param variable: The output variable
+        :param membership: The membership function that corresponds to the rule
+        """
         if isinstance(antecedents, list):
             self.antecedents = antecedents
         else:
@@ -35,11 +66,19 @@ class FuzzyRule:
         self.variable = variable
 
     def __call__(self, x):
+        """
+        Compute the ruth level for the given x
+        :param x:
+        :return:
+        """
         self.variable.value = self.membership(x) * min([cur_ant() for cur_ant in self.antecedents])
         return self.variable.value
 
 
 class FuzzyVariable:
+    """
+    A fuzzy varibale
+    """
     def __init__(self):
         self.values = []
         self.value = 0.0
@@ -47,6 +86,11 @@ class FuzzyVariable:
         self.upp_limit = 0.0
 
     def is_(self, membership):
+        """
+        Create the fuzzy term associated with the variable
+        :param membership: The membership functions that describes the term
+        :return: The created fuzzy term
+        """
         self.values.append(membership)
         return FuzzyTerm(membership, self)
 
