@@ -63,7 +63,7 @@ class TrapecFunc(MembershipFunction):
             elif x <= x3:
                 ret = 1
             elif x <= x4:
-                ret = 1 - (x - x2) / (x3 - x2)
+                ret = 1 - (x - x3) / (x4 - x3)
             else:
                 ret = 0.0
             return ret
@@ -71,7 +71,7 @@ class TrapecFunc(MembershipFunction):
         self.func = trapfunc
 
 
-def test_run():
+if __name__ == "__main__":
     left1 = -10
     center1 = 0
     right1 = 10
@@ -83,14 +83,10 @@ def test_run():
     func1 = TriFunc(left1 / 10.0, center1 / 10.0, right1 / 10.0)
     func2 = TriFunc(left2 / 10.0, center2 / 10.0, right2 / 10.0)
 
-    func = func2.__and__(func1)
+    func = func1 & func2
     for x in range(left1 - step, right2 + step, step):
         x1 = x / 10.0
         f1 = func1(x1)
         f2 = func2(x1)
         f = func(x1)
         print("x={x}, f1={f1}, f2={f2}, composition={c}".format(x=x, f1=f1, f2=f2, c=f))
-
-
-if __name__ == "__main__":
-    test_run()

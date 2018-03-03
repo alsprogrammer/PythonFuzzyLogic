@@ -129,7 +129,7 @@ class AndOrMembershipFunctionsTestCase(unittest.TestCase):
         func1 = TriFunc(left1 / 10.0, center1 / 10.0, right1 / 10.0)
         func2 = TriFunc(left2 / 10.0, center2 / 10.0, right2 / 10.0)
 
-        func = func2.__and__(func1)
+        func = func2 & func1
         for x in range(left1 - step, right2 + step, step):
             x1 = x / 10.0
             f1 = func1(x1)
