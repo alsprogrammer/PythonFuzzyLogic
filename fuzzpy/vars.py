@@ -1,4 +1,5 @@
 from fuzzpy.membership import TrapecFunc, TriFunc
+from fuzzpy.implications import larsen, mamdani
 
 
 class FuzzyTerm:
@@ -50,12 +51,13 @@ class FuzzyRule:
     """
     A fuzzy rule that works as an membership function
     """
-    def __init__(self, antecedents, variable, membership):
+    def __init__(self, antecedents, variable, membership, implication=larsen):
         """
         Create new fuzzy rule
         :param antecedents: A list of (or just the one) antecedents for the rule. Can be associated with different variables
         :param variable: The output variable
         :param membership: The membership function that corresponds to the rule
+        :param implication: The implication function that corresponds to the rule
         """
         if isinstance(antecedents, list):
             self.antecedents = antecedents
@@ -64,6 +66,7 @@ class FuzzyRule:
 
         self.membership = membership
         self.variable = variable
+        self.implication = implication
 
     def __call__(self, x):
         """
@@ -71,7 +74,7 @@ class FuzzyRule:
         :param x:
         :return:
         """
-        self.variable.value = self.membership(x) * min([cur_ant() for cur_ant in self.antecedents])
+        self.variable.value = self.implication(self.membership(x), min([cur_ant() for cur_ant in self.antecedents]))
         return self.variable.value
 
 
@@ -109,8 +112,8 @@ if __name__ == "__main__":
     slow = TriFunc(0, 0, 750)
     fast = TriFunc(250, 1000, 1000)
 
-    blow_slow = FuzzyRule(temp_is_cold | temp_is_norm, fuzzy_blow, slow)
-    blow_fast = FuzzyRule(temp_is_hot, fuzzy_blow, fast)
+    blow_slow = FuzzyRule(temp_is_cold | temp_is_norm, fuzzy_blow, slow, mamdani)
+    blow_fast = FuzzyRule(temp_is_hot, fuzzy_blow, fast, mamdani)
 
     # check the memebership functions and antecedents
     for temp in range(0, 30):
