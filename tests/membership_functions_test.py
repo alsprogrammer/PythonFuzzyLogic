@@ -1,5 +1,5 @@
 import unittest
-from fuzzpy.membership import TriFunc, TrapecFunc
+from fuzzpy.memberships import TriFunc, TrapecFunc
 
 
 class MembershipFunctionsTestCase(unittest.TestCase):

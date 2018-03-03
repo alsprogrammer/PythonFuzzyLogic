@@ -1,4 +1,4 @@
-from fuzzpy.membership import TrapecFunc, TriFunc
+from fuzzpy.memberships import TrapecFunc, TriFunc
 from fuzzpy.implications import larsen, mamdani
 
 
@@ -115,16 +115,8 @@ if __name__ == "__main__":
     blow_slow = FuzzyRule(temp_is_cold | temp_is_norm, fuzzy_blow, slow, mamdani)
     blow_fast = FuzzyRule(temp_is_hot, fuzzy_blow, fast, mamdani)
 
-    # check the memebership functions and antecedents
-    for temp in range(0, 30):
-        fuzzy_temp.value = temp
-        print("The temp is {}".format(temp))
-        print("It's hot: {}".format(temp_is_hot()))
-        print("It's norm: {}".format(temp_is_norm()))
-        print("It's cold: {}".format(temp_is_cold()))
-
     # check the rules
-    for temp in range(0, 30, 5):
+    for temp in range(0, 35, 5):
         fuzzy_temp.value = temp
         print()
         print("Cur temp = {}".format(temp))
