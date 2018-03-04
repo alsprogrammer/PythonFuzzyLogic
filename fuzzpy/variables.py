@@ -64,6 +64,9 @@ class FuzzyRule:
         else:
             self.antecedents = [antecedents]
 
+        variable.low_limit = min(variable.low_limit, membership.left_border)
+        variable.upp_limit = max(variable.upp_limit, membership.right_border)
+
         self.membership = membership
         self.variable = variable
         self.implication = implication
@@ -83,10 +86,9 @@ class FuzzyVariable:
     A fuzzy varibale
     """
     def __init__(self):
-        self.values = []
         self.value = 0.0
-        self.low_limit = 0.0
-        self.upp_limit = 0.0
+        self.low_limit = float("inf")
+        self.upp_limit = -float("inf")
 
     def is_(self, membership):
         """
@@ -94,7 +96,9 @@ class FuzzyVariable:
         :param membership: The membership functions that describes the term
         :return: The created fuzzy term
         """
-        self.values.append(membership)
+        self.low_limit = min(self.low_limit, membership.left_border)
+        self.upp_limit = max(self.upp_limit, membership.right_border)
+
         return FuzzyTerm(membership, self)
 
 
@@ -123,3 +127,8 @@ if __name__ == "__main__":
         for freq in range(0, 1000, 100):
             print("Frequency = {}".format(freq))
             print("Fan speed = {}".format(max(blow_slow(freq), blow_fast(freq))))
+
+    print("Temp lower limit is {}".format(fuzzy_temp.low_limit))
+    print("Temp upper limit is {}".format(fuzzy_temp.upp_limit))
+    print("Blow lower limit is {}".format(fuzzy_blow.low_limit))
+    print("Dlow upper limit is {}".format(fuzzy_blow.upp_limit))
