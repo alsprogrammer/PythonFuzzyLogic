@@ -116,15 +116,15 @@ if __name__ == "__main__":
     slow = TriFunc(0, 0, 750)
     fast = TriFunc(250, 1000, 1000)
 
-    blow_slow = FuzzyRule(temp_is_cold | temp_is_norm, fuzzy_blow, slow, mamdani)
-    blow_fast = FuzzyRule(temp_is_hot, fuzzy_blow, fast, mamdani)
+    blow_slow = FuzzyRule(temp_is_cold | temp_is_norm, fuzzy_blow, slow)
+    blow_fast = FuzzyRule(temp_is_hot, fuzzy_blow, fast)
 
     # check the rules
     for temp in range(0, 35, 5):
         fuzzy_temp.value = temp
         print()
         print("Cur temp = {}".format(temp))
-        for freq in range(0, 1000, 100):
+        for freq in range(0, 1001, 100):
             print("Frequency = {}".format(freq))
             print("Fan speed = {}".format(max(blow_slow(freq), blow_fast(freq))))
 
