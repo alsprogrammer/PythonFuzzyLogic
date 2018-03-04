@@ -1,5 +1,14 @@
-def defuzzyfy(rules, defuzzfier):
+def func_generator(start, stop, num):
+    step = start + float(stop - start) / float(num)
+    cur_x = start
+    while cur_x <= stop:
+        yield cur_x
+        cur_x += step
+
+
+def defuzzyfy(rules):
     variables = {}
+    ret_vals = []
 
     if not isinstance(rules, list):
         items = [rules]
@@ -7,10 +16,20 @@ def defuzzyfy(rules, defuzzfier):
         items = rules
 
     for rule in items:
-        if id(rule.variable) not in vars:
+        if id(rule.variable) not in variables:
             variables[id(rule.variable)] = [rule]
         else:
             variables[id(rule.variable)].append(rule)
 
     for var in variables:
-        cur_var = variables[var].variable
+        cur_var = variables[var][0].variable
+        upp = 0
+        bott = 0
+        for x in func_generator(cur_var.low_limit, cur_var.upp_limit, 100):
+            mu = max([fuzzy_val(x) for fuzzy_val in variables[var]])
+            upp += (x * mu)
+            bott += mu
+        cur_var.value = upp / bott
+        ret_vals.append(cur_var.value)
+
+    return ret_vals

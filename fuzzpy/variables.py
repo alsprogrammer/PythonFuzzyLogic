@@ -1,5 +1,6 @@
 from fuzzpy.memberships import TrapecFunc, TriFunc
 from fuzzpy.implications import larsen, mamdani
+from fuzzpy.defuzzification import defuzzyfy
 
 
 class FuzzyTerm:
@@ -131,4 +132,12 @@ if __name__ == "__main__":
     print("Temp lower limit is {}".format(fuzzy_temp.low_limit))
     print("Temp upper limit is {}".format(fuzzy_temp.upp_limit))
     print("Blow lower limit is {}".format(fuzzy_blow.low_limit))
-    print("Dlow upper limit is {}".format(fuzzy_blow.upp_limit))
+    print("Blow upper limit is {}".format(fuzzy_blow.upp_limit))
+
+    fan_speed = defuzzyfy([blow_slow, blow_fast])
+    print("Defuzzyfied values are {}".format(fan_speed))
+    print("Or defuzzyfied fan speed is {}".format(fuzzy_blow.value))
+    print("It was for {} temperature, now it will be for".format(fuzzy_temp.value))
+    fuzzy_temp.value = 13
+    defuzzyfy([blow_slow, blow_fast])
+    print("{}, and the fan speed is {}".format(fuzzy_temp.value, fuzzy_blow.value))
