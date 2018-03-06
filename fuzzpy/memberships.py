@@ -36,6 +36,9 @@ class TriFunc(MembershipFunction):
     The triangle membership function.
     """
     def __init__(self, x1, x2, x3):
+        if x1 > x2 or x2 >x3 or x1 > x3:
+            raise ValueError("x1 < x2 < x3")
+
         self.__points = [x1, x2, x3]
         self.left_border = min(self.__points)
         self.right_border = max(self.__points)
@@ -59,6 +62,9 @@ class TrapecFunc(MembershipFunction):
     The triangle membership function.
     """
     def __init__(self, x1, x2, x3, x4):
+        if x1 > x2 or x2 >x3 or x3 > x4 or x1 > x3 or x1 > x4 or x2 > x4:
+            raise ValueError("x1 < x2 < x3 < x4")
+
         self.__points = [x1, x2, x3, x4]
         self.left_border = min(self.__points)
         self.right_border = max(self.__points)

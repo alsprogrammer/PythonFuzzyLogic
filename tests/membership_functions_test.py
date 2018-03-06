@@ -83,6 +83,47 @@ class MembershipFunctionsTestCase(unittest.TestCase):
             else:
                 self.assertEqual(func(x1), 0)
 
+    def raising_trifunc_value_error(self, x1, x2, x3):
+        t = TriFunc(x1, x2, x3)
+
+    def test_trifunc_value_errors(self):
+        with self.assertRaises(ValueError) as context:
+            self.raising_trifunc_value_error(1, 0, 1)
+        self.assertTrue(isinstance(context.exception, ValueError))
+
+        with self.assertRaises(ValueError) as context:
+            self.raising_trifunc_value_error(0, 1, 0)
+        self.assertTrue(isinstance(context.exception, ValueError))
+
+        with self.assertRaises(ValueError) as context:
+            self.raising_trifunc_value_error(2, 3, 1)
+        self.assertTrue(isinstance(context.exception, ValueError))
+
+    def raising_trapfunc_value_error(self, x1, x2, x3, x4):
+        t = TrapecFunc(x1, x2, x3, x4)
+
+    def test_trapfunc_value_errors(self):
+        with self.assertRaises(ValueError) as context:
+            self.raising_trapfunc_value_error(1, 0, 1, 2)
+        self.assertTrue(isinstance(context.exception, ValueError))
+
+        with self.assertRaises(ValueError) as context:
+            self.raising_trapfunc_value_error(2, 0, 1, 2)
+        self.assertTrue(isinstance(context.exception, ValueError))
+
+        with self.assertRaises(ValueError) as context:
+            self.raising_trapfunc_value_error(0, 2, 1, 2)
+        self.assertTrue(isinstance(context.exception, ValueError))
+
+        with self.assertRaises(ValueError) as context:
+            self.raising_trapfunc_value_error(0, 2, 3, 2)
+        self.assertTrue(isinstance(context.exception, ValueError))
+
+        with self.assertRaises(ValueError) as context:
+            self.raising_trapfunc_value_error(0, 1, 2, 0)
+        self.assertTrue(isinstance(context.exception, ValueError))
+
+
 class AndOrMembershipFunctionsTestCase(unittest.TestCase):
     """
     The test of the application of "and" and "or" operators.
