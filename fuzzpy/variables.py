@@ -1,6 +1,6 @@
 from fuzzpy.memberships import TrapecFunc, TriFunc
 from fuzzpy.implications import larsen, mamdani
-from fuzzpy.defuzzification import defuzzyfy
+from fuzzpy.defuzzification import apply_defuzzyfy_COG
 
 
 class FuzzyTerm:
@@ -104,21 +104,29 @@ class FuzzyVariable:
 
 
 if __name__ == "__main__":
-    fuzzy_temp = FuzzyVariable()
+    # Create a fuzzy variable
+    fuzzy_temp = FuzzyVariable() # Temperature
+
+    # Define the membership functions
     hot = TriFunc(20, 25, 50)
     norm = TriFunc(15, 20, 25)
     cold = TrapecFunc(0, 5, 10, 20)
 
-    temp_is_hot = fuzzy_temp.is_(hot)
-    temp_is_norm = fuzzy_temp.is_(norm)
-    temp_is_cold = fuzzy_temp.is_(cold)
+    # Determine the fuzzy terms
+    temp_is_hot = fuzzy_temp.is_(hot)  # The temperature is hot
+    temp_is_norm = fuzzy_temp.is_(norm)  # The temperature is normal
+    temp_is_cold = fuzzy_temp.is_(cold)  # The temperature is cold
 
-    fuzzy_blow = FuzzyVariable()
+    # Create an output fuzzy variable
+    fuzzy_blow = FuzzyVariable()  # The speed of the fan
+
+    # and its membership functions
     slow = TriFunc(0, 0, 750)
     fast = TriFunc(250, 1000, 1000)
 
-    blow_slow = FuzzyRule(temp_is_cold | temp_is_norm, fuzzy_blow, slow)
-    blow_fast = FuzzyRule(temp_is_hot, fuzzy_blow, fast)
+    # Determine the rules
+    blow_slow = FuzzyRule(temp_is_cold | temp_is_norm, fuzzy_blow, slow)  # If the temperature is cold or normal then fan speed is slow
+    blow_fast = FuzzyRule(temp_is_hot, fuzzy_blow, fast)  # If the temperature is hot then fan speed is fast
 
     # check the rules
     for temp in range(0, 35, 5):
@@ -129,15 +137,19 @@ if __name__ == "__main__":
             print("Frequency = {}".format(freq))
             print("Fan speed = {}".format(max(blow_slow(freq), blow_fast(freq))))
 
+    fuzzy_temp.value = 30  # Let the temperature be 30 degrees
+
+    # Lets find the limits of the variables
     print("Temp lower limit is {}".format(fuzzy_temp.low_limit))
     print("Temp upper limit is {}".format(fuzzy_temp.upp_limit))
     print("Blow lower limit is {}".format(fuzzy_blow.low_limit))
     print("Blow upper limit is {}".format(fuzzy_blow.upp_limit))
 
-    fan_speed = defuzzyfy([blow_slow, blow_fast])
-    print("Defuzzyfied values are {}".format(fan_speed))
-    print("Or defuzzyfied fan speed is {}".format(fuzzy_blow.value))
-    print("It was for {} temperature, now it will be for".format(fuzzy_temp.value))
-    fuzzy_temp.value = 13
-    defuzzyfy([blow_slow, blow_fast])
-    print("{}, and the fan speed is {}".format(fuzzy_temp.value, fuzzy_blow.value))
+    print("The temperature is {}".format(fuzzy_temp.value))
+    fan_speed = apply_defuzzyfy_COG([blow_slow, blow_fast])  # then the fan speed is
+    print("Defuzzyfied values are {}".format(fan_speed))  # it could be more then one value
+    print("Or defuzzyfied fan speed is {}".format(fuzzy_blow.value))  # and we can check the value of the fan speen directly
+
+    fuzzy_temp.value = 13  # and now the temp is 13 degrees
+    apply_defuzzyfy_COG([blow_slow, blow_fast])  # let us find the fan speed
+    print("Now the temperature is {}, and the fan speed is {}".format(fuzzy_temp.value, fuzzy_blow.value))  # and print it

@@ -1,4 +1,4 @@
-def func_generator(start, stop, num):
+def step_generator(start, stop, num):
     step = start + float(stop - start) / float(num)
     cur_x = start
     while cur_x <= stop:
@@ -6,7 +6,14 @@ def func_generator(start, stop, num):
         cur_x += step
 
 
-def defuzzyfy(rules):
+def prec_generator(start, stop, precision):
+    cur_x = start
+    while cur_x <= stop:
+        yield cur_x
+        cur_x += precision
+
+
+def apply_defuzzyfy_COG(rules):
     variables = {}
     ret_vals = []
 
@@ -25,7 +32,7 @@ def defuzzyfy(rules):
         cur_var = variables[var][0].variable
         upp = 0
         bott = 0
-        for x in func_generator(cur_var.low_limit, cur_var.upp_limit, 100):
+        for x in step_generator(cur_var.low_limit, cur_var.upp_limit, 100):
             mu = max([fuzzy_val(x) for fuzzy_val in variables[var]])
             upp += (x * mu)
             bott += mu
