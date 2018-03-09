@@ -8,23 +8,17 @@ class MembershipFunction(ABC):
     """
     def __and__(self, other):
         def ret_func(*d, **mp):
-            a = float(self(*d, **mp))
-            b = float(other(*d, **mp))
-            return a if a < b else b
+            return min(float(self(*d, **mp)), float(other(*d, **mp)))
         return ret_func
 
     def __or__(self, other):
         def ret_func(*d, **mp):
-            a = float(self(*d, **mp))
-            b = float(other(*d, **mp))
-            return a if a > b else b
+            return max(float(self(*d, **mp)), float(other(*d, **mp)))
         return ret_func
 
     def __mul__(self, other):
         def ret_func(*d, **mp):
-            a = float(self(*d, **mp))
-            b = float(other(*d, **mp))
-            return a * b
+            return float(self(*d, **mp)) * float(other(*d, **mp))
         return ret_func
 
     def __call__(self, x):
@@ -36,7 +30,11 @@ class TriFunc(MembershipFunction):
     The triangle membership function.
     """
     def __init__(self, x1, x2, x3):
-        if x1 > x2 or x2 >x3 or x1 > x3:
+        if x1 > x2:
+            raise ValueError("x1 < x2 < x3")
+        if x2 >x3:
+            raise ValueError("x1 < x2 < x3")
+        if x1 > x3:
             raise ValueError("x1 < x2 < x3")
 
         self.__points = [x1, x2, x3]
@@ -62,7 +60,17 @@ class TrapecFunc(MembershipFunction):
     The triangle membership function.
     """
     def __init__(self, x1, x2, x3, x4):
-        if x1 > x2 or x2 >x3 or x3 > x4 or x1 > x3 or x1 > x4 or x2 > x4:
+        if x1 > x2:
+            raise ValueError("x1 < x2 < x3 < x4")
+        if x2 > x3:
+            raise ValueError("x1 < x2 < x3 < x4")
+        if x3 > x4:
+            raise ValueError("x1 < x2 < x3 < x4")
+        if x1 > x3:
+            raise ValueError("x1 < x2 < x3 < x4")
+        if x1 > x4:
+            raise ValueError("x1 < x2 < x3 < x4")
+        if x2 > x4:
             raise ValueError("x1 < x2 < x3 < x4")
 
         self.__points = [x1, x2, x3, x4]
