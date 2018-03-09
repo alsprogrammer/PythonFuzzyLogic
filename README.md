@@ -1,6 +1,9 @@
 # PythonFuzzyLogic
 The library for working with fuzzy logic in python
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/0e2daeaf81fad51863fb/maintainability)](https://codeclimate.com/github/alsprogrammer/PythonFuzzyLogic/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/0e2daeaf81fad51863fb/test_coverage)](https://codeclimate.com/github/alsprogrammer/PythonFuzzyLogic/test_coverage)
+
 ### What is this repository for? ###
 
 This library is developed to be used for modelling the fuzzy sets and fuzzy controllers. The library cab be used both
