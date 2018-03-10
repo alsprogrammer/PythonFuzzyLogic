@@ -17,10 +17,10 @@ def apply_defuzzyfy_COG(rules):
     variables = {}
     ret_vals = []
 
-    if not isinstance(rules, list):
-        items = [rules]
-    else:
+    if isinstance(rules, list):
         items = rules
+    else:
+        items = [rules]
 
     for rule in items:
         if id(rule.variable) not in variables:
