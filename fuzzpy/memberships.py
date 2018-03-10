@@ -60,34 +60,25 @@ class TrapecFunc(MembershipFunction):
     The triangle membership function.
     """
     def __init__(self, x1, x2, x3, x4):
-        if x1 > x2:
-            raise ValueError("x1 < x2 < x3 < x4")
-        if x2 > x3:
-            raise ValueError("x1 < x2 < x3 < x4")
-        if x3 > x4:
-            raise ValueError("x1 < x2 < x3 < x4")
-        if x1 > x3:
-            raise ValueError("x1 < x2 < x3 < x4")
-        if x1 > x4:
-            raise ValueError("x1 < x2 < x3 < x4")
-        if x2 > x4:
-            raise ValueError("x1 < x2 < x3 < x4")
+        if x1 < x2 and x2 < x3 and x3 < x4:
+            self.__points = [x1, x2, x3, x4]
+            self.left_border = min(self.__points)
+            self.right_border = max(self.__points)
 
-        self.__points = [x1, x2, x3, x4]
-        self.left_border = min(self.__points)
-        self.right_border = max(self.__points)
+            def trapfunc(x):
+                if x < x1:
+                    ret = 0.0
+                elif x <= x2:
+                    ret = (x - x1) / (x2 - x1)
+                elif x <= x3:
+                    ret = 1
+                elif x <= x4:
+                    ret = 1 - (x - x3) / (x4 - x3)
+                else:
+                    ret = 0.0
 
-        def trapfunc(x):
-            if x < x1:
-                ret = 0.0
-            elif x <= x2:
-                ret = (x - x1) / (x2 - x1)
-            elif x <= x3:
-                ret = 1
-            elif x <= x4:
-                ret = 1 - (x - x3) / (x4 - x3)
-            else:
-                ret = 0.0
-            return ret
+                return ret
 
-        self.func = trapfunc
+            self.func = trapfunc
+        else:
+            raise ValueError("x1 < x2 < x3 < x4")
