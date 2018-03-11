@@ -30,7 +30,7 @@ class TriFunc(MembershipFunction):
     The triangle membership function.
     """
     def __init__(self, x1, x2, x3):
-        if x1 < x2 and x2 < x3:
+        if x1 <= x2 and x2 <= x3 and x1 != x3:
             self.__points = [x1, x2, x3]
             self.left_border = min(self.__points)
             self.right_border = max(self.__points)
