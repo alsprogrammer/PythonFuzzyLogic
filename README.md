@@ -3,6 +3,7 @@ The library for working with fuzzy logic in python
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/0e2daeaf81fad51863fb/maintainability)](https://codeclimate.com/github/alsprogrammer/PythonFuzzyLogic/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/0e2daeaf81fad51863fb/test_coverage)](https://codeclimate.com/github/alsprogrammer/PythonFuzzyLogic/test_coverage)
+[![Build Status](https://travis-ci.org/alsprogrammer/PythonFuzzyLogic.svg?branch=master)](https://travis-ci.org/alsprogrammer/PythonFuzzyLogic)
 
 ### What is this repository for? ###
 
