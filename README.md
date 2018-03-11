@@ -2,7 +2,7 @@
 The library for working with fuzzy logic in python
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/0e2daeaf81fad51863fb/maintainability)](https://codeclimate.com/github/alsprogrammer/PythonFuzzyLogic/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/0e2daeaf81fad51863fb/test_coverage)](https://codeclimate.com/github/alsprogrammer/PythonFuzzyLogic/test_coverage)
+[![Coverage Status](https://coveralls.io/repos/github/alsprogrammer/PythonFuzzyLogic/badge.svg?branch=master)](https://coveralls.io/github/alsprogrammer/PythonFuzzyLogic?branch=master)
 [![Build Status](https://travis-ci.org/alsprogrammer/PythonFuzzyLogic.svg?branch=master)](https://travis-ci.org/alsprogrammer/PythonFuzzyLogic)
 
 ### What is this repository for? ###
@@ -10,7 +10,7 @@ The library for working with fuzzy logic in python
 This library is developed to be used for modelling the fuzzy sets and fuzzy controllers. The library cab be used both
 in production and for educational purposes.
 
-Version 0.1a
+Version 0.2
 
 ### The example ###
 
@@ -64,9 +64,8 @@ Version 0.1a
 Under construction now.
 * Summary of set up
 * Configuration
-* Dependencies
-* Database configuration
-* How to run tests
+* Dependencies: see requirements.txt
+* How to run tests: in the project folder run command: python -m pytest --cov=tests/
 * Deployment instructions
 
 ### Contribution guidelines ###
