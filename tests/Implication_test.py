@@ -6,9 +6,6 @@ class MembershipFunctionsTestCase(unittest.TestCase):
     """
     The test of the creation of triangle membership function.
     """
-    def SetUp(self):
-        pass
-
     def test_larsen(self):
         vals = [(0, 0), (0, 1), (1, 0), (1, 1), (0.5, 0.5)]
 
