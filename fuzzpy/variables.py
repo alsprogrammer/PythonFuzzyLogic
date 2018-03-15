@@ -30,8 +30,9 @@ class FuzzyTerm:
         :return: new membership function
         """
         def ret_func(*d, **mp):
-            return min(float(self(*d, **mp)), float(other(*d, **mp)))
-        return ret_func
+            return min(float(self.membership(*d, **mp)), float(other.membership(*d, **mp)))
+        ret_term = FuzzyTerm(ret_func, self.variable)
+        return ret_term
 
     def __or__(self, other):
         """
@@ -40,8 +41,9 @@ class FuzzyTerm:
         :return: new membership function
         """
         def ret_func(*d, **mp):
-            return max(float(self(*d, **mp)), float(other(*d, **mp)))
-        return ret_func
+            return max(float(self.membership(*d, **mp)), float(other.membership(*d, **mp)))
+        ret_term = FuzzyTerm(ret_func, self.variable)
+        return ret_term
 
 
 class FuzzyRule:
