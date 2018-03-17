@@ -1,8 +1,12 @@
-# PythonFuzzyLogic
-The library for working with fuzzy logic in python
+# FuzzPy
+The library for working with fuzzy logic in python.
 
-[![Coverage Status](https://coveralls.io/repos/github/alsprogrammer/PythonFuzzyLogic/badge.svg?branch=master)](https://coveralls.io/github/alsprogrammer/PythonFuzzyLogic?branch=master)
+This library was developed with simplicity and independability in mind. The main idea was to use functional
+approach as the basis of the fuzzy logic is membership functions combinations and Python has powerful functional
+conception.
+
 [![Build Status](https://travis-ci.org/alsprogrammer/PythonFuzzyLogic.svg?branch=master)](https://travis-ci.org/alsprogrammer/PythonFuzzyLogic)
+[![Coverage Status](https://coveralls.io/repos/github/alsprogrammer/PythonFuzzyLogic/badge.svg?branch=master)](https://coveralls.io/github/alsprogrammer/PythonFuzzyLogic?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0e2daeaf81fad51863fb/maintainability)](https://codeclimate.com/github/alsprogrammer/PythonFuzzyLogic/maintainability)
 
 ### What is this repository for? ###
@@ -63,12 +67,5 @@ Version 0.3
 
 * To setup the packet use pip: pip install fuzzpy-0.3.zip.
 * No configuration is needed.
-* Dependencies: see requirements.txt. At the moment no external dependencies are required.
-* How to run tests: in the project folder run command: python -m pytest --cov=tests/
-
-### Contribution guidelines ###
-
-Under construction now.
-* Writing tests
-* Code review
-* Other guidelines
+* Dependencies: see requirements.txt. At the moment no external dependencies are required except for testing purposes.
+* How to run the tests: in the project folder run command: python -m pytest --cov=tests/
