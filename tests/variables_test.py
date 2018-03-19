@@ -80,5 +80,20 @@ class FuzzTermTest(unittest.TestCase):
             self.assertEqual(fuzzy_term(), max(trifunc1(x), trifunc2(x)))
 
 
+class FuzzyVar(unittest.TestCase):
+    def test_term_generation(self):
+        limits1 = (-2, -1, 0)
+        limits2 = (0, 1, 2)
+        fuzzy_var = FuzzyVariable()
+        trifunc1 = TriFunc(limits1[0], limits1[1], limits1[2])
+        trifunc2 = TriFunc(limits2[0], limits2[1], limits2[2])
+        fuzzy_var.is_(trifunc1)
+        self.assertEqual(fuzzy_var.low_limit, limits1[0])
+        self.assertEqual(fuzzy_var.upp_limit, limits1[2])
+        fuzzy_var.is_(trifunc2)
+        self.assertEqual(fuzzy_var.low_limit, min(limits1[0], limits2[0]))
+        self.assertEqual(fuzzy_var.upp_limit, max(limits1[2], limits2[2]))
+
+
 if __name__ == "__main__":
     unittest.main()
