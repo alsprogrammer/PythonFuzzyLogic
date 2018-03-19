@@ -1,9 +1,12 @@
 import unittest
 from fuzzpy.variables import FuzzyVariable, FuzzyTerm, FuzzyRule
-from fuzzpy.memberships import TriFunc, TrapecFunc
+from fuzzpy.memberships import TriFunc
 
 
 class FuzzTermTest(unittest.TestCase):
+    """
+    The test of fuzzy term
+    """
     def test_term_is_callable(self):
         limits = (-1, 0, 1)
         fuzzy_var = FuzzyVariable()
@@ -81,6 +84,9 @@ class FuzzTermTest(unittest.TestCase):
 
 
 class FuzzyVar(unittest.TestCase):
+    """
+    The test of fuzzy var
+    """
     def test_term_generation(self):
         limits1 = (-2, -1, 0)
         limits2 = (0, 1, 2)
@@ -94,6 +100,5 @@ class FuzzyVar(unittest.TestCase):
         self.assertEqual(fuzzy_var.low_limit, min(limits1[0], limits2[0]))
         self.assertEqual(fuzzy_var.upp_limit, max(limits1[2], limits2[2]))
 
-
-if __name__ == "__main__":
-    unittest.main()
+class TestFuzzyRule(unittest.TestCase):
+    pass
