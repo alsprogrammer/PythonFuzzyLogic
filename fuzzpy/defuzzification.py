@@ -6,11 +6,11 @@ def step_generator(start, stop, num):
         cur_x += step
 
 
-def prec_generator(start, stop, precision):
+def prec_generator(start, stop, step):
     cur_x = start
     while cur_x <= stop:
         yield cur_x
-        cur_x += precision
+        cur_x += step
 
 
 def apply_defuzzyfy_COG(rules):

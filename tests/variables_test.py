@@ -100,5 +100,64 @@ class FuzzyVar(unittest.TestCase):
         self.assertEqual(fuzzy_var.low_limit, min(limits1[0], limits2[0]))
         self.assertEqual(fuzzy_var.upp_limit, max(limits1[2], limits2[2]))
 
+
 class TestFuzzyRule(unittest.TestCase):
-    pass
+    def test_rule_creation_one_anrecedent(self):
+        input_fuzzy_var = FuzzyVariable()
+        input_membership_func = TriFunc(-1, 0, 1)
+        input_fuzzy_term = input_fuzzy_var.is_(input_membership_func)
+        output_fuzzy_var = FuzzyVariable()
+        output_membership_func = TriFunc(100, 200, 300)
+        fuzzy_rule = FuzzyRule(input_fuzzy_term, output_fuzzy_var, output_membership_func)
+        self.assertEqual(len(fuzzy_rule.antecedents), 1)
+        self.assertEqual(fuzzy_rule.variable.low_limit, 100)
+        self.assertEqual(fuzzy_rule.variable.upp_limit, 300)
+
+    def test_rule_creation_two_anrecedents(self):
+        input_fuzzy_var = FuzzyVariable()
+        input_membership_func1 = TriFunc(-1, 0, 1)
+        input_membership_func2 = TriFunc(1, 2, 3)
+        input_fuzzy_term1 = input_fuzzy_var.is_(input_membership_func1)
+        input_fuzzy_term2 = input_fuzzy_var.is_(input_membership_func2)
+        output_fuzzy_var = FuzzyVariable()
+        output_membership_func = TriFunc(100, 200, 300)
+        fuzzy_rule = FuzzyRule([input_fuzzy_term1, input_fuzzy_term2], output_fuzzy_var, output_membership_func)
+        self.assertEqual(len(fuzzy_rule.antecedents), 2)
+
+    def test_rule_call(self):
+        input_fuzzy_var = FuzzyVariable()
+        input_membership_func = TriFunc(-1, 0, 1)
+        input_fuzzy_term = input_fuzzy_var.is_(input_membership_func)
+        output_fuzzy_var = FuzzyVariable()
+        output_membership_func = TriFunc(100, 200, 300)
+        fuzzy_rule = FuzzyRule(input_fuzzy_term, output_fuzzy_var, output_membership_func)
+
+        input_fuzzy_var.value = 0
+        self.assertEqual(fuzzy_rule(200), 1)
+        self.assertEqual(fuzzy_rule(100), 0)
+        self.assertEqual(fuzzy_rule(150), 0.5)
+        self.assertEqual(fuzzy_rule(250), 0.5)
+        self.assertEqual(fuzzy_rule(300), 0)
+
+        input_fuzzy_var.value = -1
+        self.assertEqual(fuzzy_rule(200), 0)
+        self.assertEqual(fuzzy_rule(100), 0)
+        self.assertEqual(fuzzy_rule(150), 0)
+        self.assertEqual(fuzzy_rule(250), 0)
+        self.assertEqual(fuzzy_rule(300), 0)
+
+        input_fuzzy_var.value = 1
+        self.assertEqual(fuzzy_rule(200), 0)
+        self.assertEqual(fuzzy_rule(100), 0)
+        self.assertEqual(fuzzy_rule(150), 0)
+        self.assertEqual(fuzzy_rule(250), 0)
+        self.assertEqual(fuzzy_rule(300), 0)
+
+        input_fuzzy_var.value = 0.5
+        self.assertEqual(fuzzy_rule(200), 0.5)
+        self.assertEqual(fuzzy_rule(100), 0)
+        self.assertEqual(fuzzy_rule(150), 0.25)
+        self.assertEqual(fuzzy_rule(250), 0.25)
+        self.assertEqual(fuzzy_rule(300), 0)
+
+
