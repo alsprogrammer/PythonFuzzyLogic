@@ -73,5 +73,5 @@ Version 0.3
 Or you can use the following commands:
 
     python -m unittest tests/Implication_test.py tests/membership_functions_test.py tests/variables_test.py tests/defuzzify_test.py
-    coverage run -m unittest tests/Implication_test.py tests/membership_functions_test.py tests/variables_test.py
+    coverage run -m unittest tests/Implication_test.py tests/membership_functions_test.py tests/variables_test.py tests/defuzzify_test.py
     coverage report -m
