@@ -69,3 +69,9 @@ Version 0.3
 * No configuration is needed.
 * Dependencies: see requirements.txt. At the moment no external dependencies are required except for testing purposes.
 * How to run the tests: in the project folder run command: python -m pytest --cov=tests/
+
+Or you can use the following commands:
+
+    python -m unittest tests/Implication_test.py tests/membership_functions_test.py tests/variables_test.py tests/defuzzify_test.py
+    coverage run -m unittest tests/Implication_test.py tests/membership_functions_test.py tests/variables_test.py
+    coverage report -m
