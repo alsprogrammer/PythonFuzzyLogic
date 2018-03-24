@@ -3,7 +3,7 @@ def step_generator(start, stop, num):
         raise ValueError("The number of steps shouldn't be zero or negative")
     if start == stop:
         raise ValueError("The start number shouldn't be equal to stop")
-    step = start + float(stop - start) / float(num)
+    step = float(stop - start) / float(num)
     cur_x = start
     while cur_x <= stop:
         yield cur_x

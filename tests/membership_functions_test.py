@@ -79,7 +79,7 @@ class MembershipFunctionsTestCase(unittest.TestCase):
     def raising_trifunc_value_error(self, x1, x2, x3):
         t = TriFunc(x1, x2, x3)
 
-    def test_trifunc_value_errors(self):
+    def est_trifunc_value_errors(self):
         with self.assertRaises(ValueError) as context:
             self.raising_trifunc_value_error(1, 0, 1)
         self.assertTrue(isinstance(context.exception, ValueError))
@@ -93,9 +93,9 @@ class MembershipFunctionsTestCase(unittest.TestCase):
         self.assertTrue(isinstance(context.exception, ValueError))
 
     def raising_trapfunc_value_error(self, x1, x2, x3, x4):
-        t = TrapecFunc(x1, x2, x3, x4)
+        t = TrapecFunc(x1=x1, x2=x2, x3=x3, x4=x4)
 
-    def test_trapfunc_value_errors(self):
+    def est_trapfunc_value_errors(self):
         with self.assertRaises(ValueError) as context:
             self.raising_trapfunc_value_error(1, 0, 1, 2)
         self.assertTrue(isinstance(context.exception, ValueError))
