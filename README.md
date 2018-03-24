@@ -14,7 +14,7 @@ conception.
 This library is developed to be used for modelling the fuzzy sets and fuzzy controllers. The library cab be used both
 in production and for educational purposes.
 
-Version 0.3
+Version 0.4
 
 ### The example ###
 
@@ -68,10 +68,17 @@ Version 0.3
 * To setup the packet use pip: pip install fuzzpy-0.3.zip.
 * No configuration is needed.
 * Dependencies: see requirements.txt. At the moment no external dependencies are required except for testing purposes.
-* How to run the tests: in the project folder run command: python -m pytest --cov=tests/
+* How to run the tests: in the project folder run command:
+    python -m pytest --cov=tests/
 
 Or you can use the following commands:
 
     python -m unittest tests/Implication_test.py tests/membership_functions_test.py tests/variables_test.py tests/defuzzify_test.py
     coverage run -m unittest tests/Implication_test.py tests/membership_functions_test.py tests/variables_test.py tests/defuzzify_test.py
     coverage report -m
+
+### Contribution
+
+The contribution would be highly appreciable.
+
+Now it is good to implement another defuzzification methods (see [defuzzification methods](https://en.wikipedia.org/wiki/Defuzzification))
