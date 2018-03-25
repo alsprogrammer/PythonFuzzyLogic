@@ -1,6 +1,6 @@
 import unittest
-from fuzzpy.variables import FuzzyVariable, FuzzyTerm, FuzzyRule
-from fuzzpy.memberships import TriFunc
+from fuzzypy.variables import FuzzyVariable, FuzzyTerm, FuzzyRule
+from fuzzypy.memberships import TriFunc
 
 
 class FuzzTermTest(unittest.TestCase):

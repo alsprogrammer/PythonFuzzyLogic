@@ -1,4 +1,4 @@
-# FuzzPy
+# FuzzyPy
 The library for working with fuzzy logic in python.
 
 This library was developed with simplicity and independability in mind. The main idea was to use functional
@@ -65,7 +65,7 @@ Version 0.4
 
 ### How do I get set up? ###
 
-* To setup the packet use pip: pip install fuzzpy-0.3.zip.
+* To setup the packet use pip: pip install fuzzypy
 * No configuration is needed.
 * Dependencies: see requirements.txt. At the moment no external dependencies are required except for testing purposes.
 * How to run the tests: in the project folder run command

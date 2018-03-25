@@ -1,6 +1,6 @@
-from fuzzpy.memberships import TrapecFunc, TriFunc
-from fuzzpy.implications import larsen, mamdani
-from fuzzpy.defuzzification import apply_defuzzyfy_COG
+from fuzzypy.memberships import TrapecFunc, TriFunc
+from fuzzypy.implications import larsen, mamdani
+from fuzzypy.defuzzification import apply_defuzzyfy_COG
 
 
 class FuzzyTerm:

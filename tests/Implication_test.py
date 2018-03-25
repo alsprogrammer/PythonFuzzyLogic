@@ -1,5 +1,5 @@
 import unittest
-from fuzzpy.implications import mamdani, larsen
+from fuzzypy.implications import mamdani, larsen
 
 
 class MembershipFunctionsTestCase(unittest.TestCase):

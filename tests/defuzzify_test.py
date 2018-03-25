@@ -1,6 +1,6 @@
 from unittest import TestCase
-from fuzzpy.defuzzification import step_generator, prec_generator
-from fuzzpy.variables import FuzzyRule, FuzzyVariable, FuzzyTerm, TriFunc, apply_defuzzyfy_COG
+from fuzzypy.defuzzification import step_generator, prec_generator
+from fuzzypy.variables import FuzzyRule, FuzzyVariable, FuzzyTerm, TriFunc, apply_defuzzyfy_COG
 
 
 class TestStepGenerator(TestCase):

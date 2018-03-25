@@ -1,10 +1,10 @@
-import fuzzpy
+import fuzzypy
 from setuptools import setup, find_packages
 from os.path import join, dirname
 
 setup(
-    name='fuzzpy',
-    version=fuzzpy.__version__,
+    name='fuzzypy',
+    version=fuzzypy.__version__,
     author='Aleksandr Saiapin',
     author_email='alstutor@gmail.com',
     packages=find_packages(),
