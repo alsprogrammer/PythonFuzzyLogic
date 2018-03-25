@@ -68,8 +68,8 @@ Version 0.4
 * To setup the packet use pip: pip install fuzzpy-0.3.zip.
 * No configuration is needed.
 * Dependencies: see requirements.txt. At the moment no external dependencies are required except for testing purposes.
-* How to run the tests: in the project folder run command:
-    python -m pytest --cov=tests/
+* How to run the tests: in the project folder run command
+    python setup.py test
 
 Or you can use the following commands:
 
