@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a5998576-719e-49ab-bea4-bef966ad125e" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1293825541">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuzzypy/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuzzypy/defuzzification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/defuzzify_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/membership_functions_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1309">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuzzypy/variables.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuzzypy/memberships.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Python Unit Test" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>def re</find>
+      <find>test_and_not_intersected_trifunc</find>
+      <find>test_and_not_intersected_trapecfunc</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="membership_function" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sample/__init__.py" />
+        <option value="$PROJECT_DIR$/sample/helpers.py" />
+        <option value="$PROJECT_DIR$/docs/conf.py" />
+        <option value="$PROJECT_DIR$/tests/test_basic.py" />
+        <option value="$PROJECT_DIR$/tests/test_advanced.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/lib.py" />
+        <option value="$PROJECT_DIR$/sample/core.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/test_run.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/membership.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/vars.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/implications.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/functions.py" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/tests/Implication_test.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/variables.py" />
+        <option value="$PROJECT_DIR$/tests/test_fuzzyRule.py" />
+        <option value="$PROJECT_DIR$/tests/variables_test.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/defuzzification.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/memberships.py" />
+        <option value="$PROJECT_DIR$/fuzzpy/__init__.py" />
+        <option value="$PROJECT_DIR$/tests/defuzzify_test.py" />
+        <option value="$PROJECT_DIR$/tests/membership_functions_test.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/setup.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="width" value="977" />
+    <option name="height" value="1039" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PythonFuzzyLogic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonFuzzyLogic" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.micropython.configurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in membership_functions_test.py">
+    <configuration default="true" type="ApexTest" factoryName="Apex Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonFuzzyLogic" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration name="memberships" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonFuzzyLogic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fuzzpy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fuzzpy/memberships.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="variables" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonFuzzyLogic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fuzzpy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fuzzpy/variables.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="variables_test" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonFuzzyLogic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/variables_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Implication_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PythonFuzzyLogic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/Implication_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in defuzzify_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PythonFuzzyLogic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/defuzzify_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in membership_functions_test.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="PythonFuzzyLogic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/membership_functions_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in variables_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PythonFuzzyLogic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/variables_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.Unittests in membership_functions_test.py" />
+      <item itemvalue="Python.variables_test" />
+      <item itemvalue="Python.memberships" />
+      <item itemvalue="Python.variables" />
+      <item itemvalue="Python tests.Unittests in Implication_test.py" />
+      <item itemvalue="Python tests.Unittests in variables_test.py" />
+      <item itemvalue="Python tests.Unittests in defuzzify_test.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in defuzzify_test.py" />
+        <item itemvalue="Python tests.Unittests in variables_test.py" />
+        <item itemvalue="Python tests.Unittests in Implication_test.py" />
+        <item itemvalue="Python.variables" />
+        <item itemvalue="Python.memberships" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5998576-719e-49ab-bea4-bef966ad125e" name="Default" comment="" />
+      <created>1499767677267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1499767677267</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First membership function is realised.">
+      <created>1499769570809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1499769570809</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First test was implemented.">
+      <created>1519737626613</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519737626613</updated>
+    </task>
+    <task id="LOCAL-00003" summary="The project was organized in more correct way.&#10;An abstract memebership function class was added.&#10;The TriFunc was implemented as an derivative of the MembershipFunction class.&#10;&#10;The samples directory was excluded.&#10;&#10;The tests was implemented.">
+      <created>1519747418895</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1519747418895</updated>
+    </task>
+    <task id="LOCAL-00004" summary="TriFunc is fixed, now it produces correct values">
+      <created>1519787534114</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1519787534114</updated>
+    </task>
+    <task id="LOCAL-00005" summary="The trapciod membership function was added, the code was refactored.">
+      <created>1520052901183</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1520052901183</updated>
+    </task>
+    <task id="LOCAL-00006" summary="The FuzzyVariable, FuzzyTerm and FuzzyRule were implemented.&#10;A code example was added.">
+      <created>1520083373478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1520083373478</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Some comments/documentation were added.">
+      <created>1520084565512</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1520084565512</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implication functions were added.">
+      <created>1520088687690</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1520088687690</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Small refacoring was made.">
+      <created>1520092723533</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1520092723533</updated>
+    </task>
+    <task id="LOCAL-00010" summary="The limits for the variables is calculated correctly now.&#10;Unnecessary code was removed.">
+      <created>1520134969351</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1520134969351</updated>
+    </task>
+    <task id="LOCAL-00011" summary="The defuzzyfication function was added (but not implemented yet).&#10;The tests was expanded.">
+      <created>1520143702287</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1520143702287</updated>
+    </task>
+    <task id="LOCAL-00012" summary="The very first implementation of the defuzzyfication method was added.">
+      <created>1520183042538</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1520183042538</updated>
+    </task>
+    <task id="LOCAL-00013" summary="The readme was improved with example.">
+      <created>1520312595501</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1520312595501</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Some code purification and refactoring.">
+      <created>1520576773622</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1520576773622</updated>
+    </task>
+    <task id="LOCAL-00015" summary="CodeClimate badges were added.">
+      <created>1520577194687</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1520577194687</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Code refactoring.">
+      <created>1520691513314</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1520691513314</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Code refactoring.">
+      <created>1520691927022</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1520691927022</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Travis CI integration was implemented.">
+      <created>1520741570667</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1520741570667</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Travis CI integration was updated.">
+      <created>1520756906663</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1520756906663</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Travis CI badge was added.">
+      <created>1520757269990</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1520757269990</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Coveralls was added.">
+      <created>1520776576374</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1520776576375</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Readme file was updated, the test coverage badge was added.">
+      <created>1520777077083</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1520777077083</updated>
+    </task>
+    <task id="LOCAL-00023" summary="The test coverage badge was improved.">
+      <created>1520778129683</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1520778129683</updated>
+    </task>
+    <task id="LOCAL-00024" summary="The test coverage was improved.">
+      <created>1520866932720</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1520866932720</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Real and/or FuzzTerm was implemented.">
+      <created>1521111777280</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1521111777280</updated>
+    </task>
+    <task id="LOCAL-00026" summary="The setup.py was implemented. The Readme.md was updated.">
+      <created>1521114080836</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1521114080836</updated>
+    </task>
+    <task id="LOCAL-00027" summary="The package was added to the repo.">
+      <created>1521114175810</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1521114175810</updated>
+    </task>
+    <task id="LOCAL-00028" summary="The package was added to the repo.">
+      <created>1521114186324</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1521114186324</updated>
+    </task>
+    <task id="LOCAL-00029" summary="FuzzyTerm is covered by the tests now. The readme file was updated.">
+      <created>1521266151825</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1521266151825</updated>
+    </task>
+    <task id="LOCAL-00030" summary="FuzzyTerm is covered by the tests now.">
+      <created>1521430831737</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1521430831737</updated>
+    </task>
+    <task id="LOCAL-00031" summary="The tests set was improved.">
+      <created>1521431901258</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1521431901258</updated>
+    </task>
+    <task id="LOCAL-00032" summary="The FuzzyRule was fully covered by tests.">
+      <created>1521433373131</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1521433373131</updated>
+    </task>
+    <task id="LOCAL-00033" summary="prec_generator and step_generator were covered with tests.">
+      <created>1521555326874</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1521555326874</updated>
+    </task>
+    <task id="LOCAL-00034" summary="The readme file was improved.">
+      <created>1521555652432</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1521555652432</updated>
+    </task>
+    <task id="LOCAL-00035" summary="The readme file was improved.">
+      <created>1521555720075</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1521555720075</updated>
+    </task>
+    <task id="LOCAL-00036" summary="The step_generator was fixed, the membership functions now are all callable objects, not just functions">
+      <created>1521886367980</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1521886367980</updated>
+    </task>
+    <task id="LOCAL-00037" summary="The readme file has been improved.">
+      <created>1521887369135</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1521887369182</updated>
+    </task>
+    <task id="LOCAL-00038" summary="setup.py test command was added. readme file was updated.">
+      <created>1521956613435</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1521956613435</updated>
+    </task>
+    <task id="LOCAL-00039" summary="readme file was updated.">
+      <created>1521956696765</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1521956696765</updated>
+    </task>
+    <task id="LOCAL-00040" summary="The test coverage was improved.">
+      <created>1521983801891</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1521983801891</updated>
+    </task>
+    <task id="LOCAL-00041" summary="The library was renamed due to the conflict with existing library.">
+      <created>1521985522515</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1521985522515</updated>
+    </task>
+    <task id="LOCAL-00042" summary="The link to the github repository was added to the setup.py file.">
+      <created>1521985836755</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1521985836755</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_defuzzify_test_py - 2018.03.25 at 19h 59m 45s.xml">
+      <configuration name="Unittests in defuzzify_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_defuzzify_test_py - 2018.03.25 at 20h 00m 49s.xml">
+      <configuration name="Unittests in defuzzify_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_defuzzify_test_py - 2018.03.25 at 20h 06m 17s.xml">
+      <configuration name="Unittests in defuzzify_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_defuzzify_test_py - 2018.03.25 at 20h 06m 37s.xml">
+      <configuration name="Unittests in defuzzify_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_defuzzify_test_py - 2018.03.25 at 20h 08m 52s.xml">
+      <configuration name="Unittests in defuzzify_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_defuzzify_test_py - 2018.03.25 at 20h 10m 00s.xml">
+      <configuration name="Unittests in defuzzify_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_membership_functions_test_py - 2018.03.25 at 20h 11m 58s.xml">
+      <configuration name="Unittests in membership_functions_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_membership_functions_test_py - 2018.03.25 at 20h 13m 00s.xml">
+      <configuration name="Unittests in membership_functions_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_membership_functions_test_py - 2018.03.25 at 20h 13m 43s.xml">
+      <configuration name="Unittests in membership_functions_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_membership_functions_test_py - 2018.03.25 at 20h 15m 56s.xml">
+      <configuration name="Unittests in membership_functions_test.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14540648" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32942554" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3282532" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3985932" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32942554" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Debug Logs" order="9" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Salesforce" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Some code purification and refactoring." />
+    <MESSAGE value="CodeClimate badges were added." />
+    <MESSAGE value="Code refactoring." />
+    <MESSAGE value="Travis CI integration was implemented." />
+    <MESSAGE value="Travis CI integration was updated." />
+    <MESSAGE value="Travis CI badge was added." />
+    <MESSAGE value="Coveralls was added." />
+    <MESSAGE value="Readme file was updated, the test coverage badge was added." />
+    <MESSAGE value="The test coverage badge was improved." />
+    <MESSAGE value="Real and/or FuzzTerm was implemented." />
+    <MESSAGE value="The setup.py was implemented. The Readme.md was updated." />
+    <MESSAGE value="The package was added to the repo." />
+    <MESSAGE value="FuzzyTerm is covered by the tests now. The readme file was updated." />
+    <MESSAGE value="FuzzyTerm is covered by the tests now." />
+    <MESSAGE value="The tests set was improved." />
+    <MESSAGE value="The FuzzyRule was fully covered by tests." />
+    <MESSAGE value="prec_generator and step_generator were covered with tests." />
+    <MESSAGE value="The readme file was improved." />
+    <MESSAGE value="The step_generator was fixed, the membership functions now are all callable objects, not just functions" />
+    <MESSAGE value="The readme file has been improved." />
+    <MESSAGE value="setup.py test command was added. readme file was updated." />
+    <MESSAGE value="readme file was updated." />
+    <MESSAGE value="The test coverage was improved." />
+    <MESSAGE value="The library was renamed due to the conflict with existing library." />
+    <MESSAGE value="The link to the github repository was added to the setup.py file." />
+    <option name="LAST_COMMIT_MESSAGE" value="The link to the github repository was added to the setup.py file." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sample/core.py</url>
+          <line>2</line>
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/test_advanced.py" />
+    <entry file="file://$PROJECT_DIR$/docs/index.rst">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/conf.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/sample/helpers.py" />
+    <entry file="file://$PROJECT_DIR$/sample/core.py" />
+    <entry file="file://$PROJECT_DIR$/fuzzpy/test_run.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/diff_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/Program Files/Python35/Lib/codecs.py" />
+    <entry file="file://$PROJECT_DIR$/fuzzpy/functions.py" />
+    <entry file="file://$PROJECT_DIR$/.coverage">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzzypy/implications.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/variables_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="148" column="32" lean-forward="true" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Implication_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python35/Lib/unittest/case.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="72" column="24" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzzypy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzzypy/defuzzification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/defuzzify_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/membership_functions_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzzypy/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzzypy/memberships.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

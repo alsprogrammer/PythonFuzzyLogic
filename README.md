@@ -18,7 +18,7 @@ Version 0.4
 
 ### The example ###
 
-    from fuzzypy import *
+    from fuzzypy.variables import *
 
     # Create a fuzzy variable
     fuzzy_temp = FuzzyVariable() # Temperature
