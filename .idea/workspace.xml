@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5998576-719e-49ab-bea4-bef966ad125e" name="Default" comment="Add .idea to .gitignore.">
+    <list default="true" id="a5998576-719e-49ab-bea4-bef966ad125e" name="Default" comment="Fix temp value.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fuzzypy/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzypy/variables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -610,7 +611,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Code refactoring." />
     <MESSAGE value="Travis CI integration was implemented." />
     <MESSAGE value="Travis CI integration was updated." />
     <MESSAGE value="Travis CI badge was added." />
@@ -635,7 +635,8 @@
     <MESSAGE value="The link to the github repository was added to the setup.py file." />
     <MESSAGE value="Add .gitignore." />
     <MESSAGE value="Add .idea to .gitignore." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add .idea to .gitignore." />
+    <MESSAGE value="Fix temp value." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix temp value." />
   </component>
   <component name="WindowStateProjectService">
     <state x="479" y="156" key="SettingsEditor" timestamp="1604549322480">

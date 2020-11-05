@@ -146,7 +146,8 @@ if __name__ == "__main__":
     print("The temperature is {}".format(fuzzy_temp.value))
     fan_speed = apply_defuzzyfy_COG([blow_slow, blow_fast])  # then the fan speed is
     print("Defuzzyfied values are {}".format(fan_speed))  # it could be more then one value
-    print("Or defuzzyfied fan speed is {}".format(fuzzy_blow.value))  # and we can check the value of the fan speen directly
+    print("Or defuzzyfied fan speed is {}".format(fuzzy_blow.value))  # and we can check the value of the fan speed
+    # directly
 
     fuzzy_temp.value = 14  # and now the temp is 13 degrees
     apply_defuzzyfy_COG([blow_slow, blow_fast])  # let us find the fan speed
