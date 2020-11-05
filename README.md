@@ -70,7 +70,9 @@ Version 0.4
 * Dependencies: see requirements.txt. At the moment no external dependencies are required except for testing purposes.
 * How to run the tests: in the project folder run command
 
-    python setup.py test
+```
+python setup.py test
+```
 
 Or you can use the following commands:
 
