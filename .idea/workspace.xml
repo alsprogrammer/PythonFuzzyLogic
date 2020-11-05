@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5998576-719e-49ab-bea4-bef966ad125e" name="Default" comment="Fix temp value.">
+    <list default="true" id="a5998576-719e-49ab-bea4-bef966ad125e" name="Default" comment="Fix typos.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuzzypy/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzypy/variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pre-commit-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.pre-commit-config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,12 +213,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.variables_test" />
       <item itemvalue="Python.memberships" />
       <item itemvalue="Python.variables" />
-      <item itemvalue="Python.variables_test" />
+      <item itemvalue="Python tests.Unittests in membership_functions_test.py" />
       <item itemvalue="Python tests.Unittests in Implication_test.py" />
       <item itemvalue="Python tests.Unittests in defuzzify_test.py" />
-      <item itemvalue="Python tests.Unittests in membership_functions_test.py" />
       <item itemvalue="Python tests.Unittests in variables_test.py" />
     </list>
     <recent_temporary>
@@ -551,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604549061726</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Fix typos.">
+      <created>1604550250171</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604550250171</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -611,7 +618,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Travis CI integration was implemented." />
     <MESSAGE value="Travis CI integration was updated." />
     <MESSAGE value="Travis CI badge was added." />
     <MESSAGE value="Coveralls was added." />
@@ -636,13 +642,18 @@
     <MESSAGE value="Add .gitignore." />
     <MESSAGE value="Add .idea to .gitignore." />
     <MESSAGE value="Fix temp value." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix temp value." />
+    <MESSAGE value="Fix typos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix typos." />
   </component>
   <component name="WindowStateProjectService">
     <state x="479" y="156" key="SettingsEditor" timestamp="1604549322480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="479" y="156" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604549322480" />
+    <state x="555" y="257" width="806" height="528" key="Vcs.Push.Dialog.v2" timestamp="1604550268610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="257" width="806" height="528" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604550268610" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
