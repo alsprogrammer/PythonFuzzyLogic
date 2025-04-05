@@ -69,8 +69,10 @@ class MembershipFunctionsTestCase(unittest.TestCase):
         func = TriFunc(left / 10.0, center / 10.0, right / 10.0)
         for x in range(left - step, right + step, step):
             x1 = x / 10.0
-            if x <= left:
+            if x < left:
                 self.assertEqual(func(x1), 0)
+            elif x <= left:
+                self.assertEqual(func(x1), 1.0)
             elif x < right:
                 self.assertEqual(func(x1), 0.5)
             else:

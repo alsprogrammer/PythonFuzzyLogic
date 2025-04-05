@@ -1,50 +1,45 @@
-def step_generator(start, stop, num):
+from typing import Callable, Iterable
+
+from fuzzypy.variables import FuzzyTerm
+
+
+def step_generator(start: float, stop: float, num: int) -> Iterable[float]:
     if num <= 0:
         raise ValueError("The number of steps shouldn't be zero or negative")
     if start == stop:
         raise ValueError("The start number shouldn't be equal to stop")
+
     step = float(stop - start) / float(num)
     cur_x = start
+
     while cur_x <= stop:
         yield cur_x
         cur_x += step
 
 
-def prec_generator(start, stop, step):
-    if step == 0:
-        raise ValueError("The steps value shouldn't be zero")
-    if start == stop:
-        raise ValueError("The start number shouldn't be equal to stop")
-    cur_x = start
-    while cur_x <= stop:
-        yield cur_x
-        cur_x += step
+def center_of_gravity(function_to_evaluate: FuzzyTerm, x_elements: Iterable[float]) -> float:
+    x = list(x_elements)
+
+    num = sum(
+        x * function_to_evaluate(x)
+        for x in x
+    )
+
+    denum = sum(
+        function_to_evaluate(x)
+        for x in x
+    )
+
+    return num / denum if denum else function_to_evaluate.variable.upp_limit
 
 
-def apply_defuzzyfy_COG(rules):
-    variables = {}
-    ret_vals = []
+def defuzzify(term_to_defuzzify: FuzzyTerm, method: Callable[[FuzzyTerm, Iterable[float]], float] = center_of_gravity):
+    variable = term_to_defuzzify.variable
+    lower_limit = variable.low_limit
+    upper_limit = variable.upp_limit
 
-    if isinstance(rules, list):
-        items = rules
-    else:
-        items = [rules]
+    defuzzified_value = method(term_to_defuzzify, step_generator(lower_limit, upper_limit, 100))
 
-    for rule in items:
-        if id(rule.variable) not in variables:
-            variables[id(rule.variable)] = [rule]
-        else:
-            variables[id(rule.variable)].append(rule)
+    variable.value = defuzzified_value
 
-    for var in variables:
-        cur_var = variables[var][0].variable
-        upp = 0
-        bott = 0
-        for x in step_generator(cur_var.low_limit, cur_var.upp_limit, 100):
-            mu = max([fuzzy_val(x) for fuzzy_val in variables[var]])
-            upp += (x * mu)
-            bott += mu
-        cur_var.value = upp / bott
-        ret_vals.append(cur_var.value)
-
-    return ret_vals
+    return defuzzified_value

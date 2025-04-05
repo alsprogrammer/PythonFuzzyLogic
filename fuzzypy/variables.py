@@ -1,13 +1,15 @@
-from fuzzypy.memberships import TrapecFunc, TriFunc
+from collections.abc import Callable
+from typing import Union, Iterable, Any, Optional
+
+from fuzzypy.memberships import MembershipFunction
 from fuzzypy.implications import larsen, mamdani
-from fuzzypy.defuzzification import apply_defuzzyfy_COG
 
 
 class FuzzyTerm:
     """
-    A fuzzy term like the the weather is hot or the speed is slow
+    A fuzzy term like the weather is hot or the speed is slow
     """
-    def __init__(self, membership, variable):
+    def __init__(self, membership: Union[MembershipFunction, Callable[[Any], float]], variable):
         """
         Create new fuzzy term
         :param membership: The membership function to describe the value of the variable as a fuzzy set
@@ -16,12 +18,12 @@ class FuzzyTerm:
         self.membership = membership
         self.variable = variable
 
-    def __call__(self):
+    def __call__(self, optional_x: Optional[float] = None):
         """
         Compute the level
         :return: level
         """
-        return self.membership(self.variable.value)
+        return self.membership(optional_x if optional_x is not None else self.variable.value)
 
     def __and__(self, other):
         """
@@ -29,9 +31,11 @@ class FuzzyTerm:
         :param other: the term to combine with
         :return: new membership function
         """
-        def ret_func(*d, **mp):
+        def ret_func(*d, **mp) -> float:
             return min(float(self.membership(*d, **mp)), float(other.membership(*d, **mp)))
+
         ret_term = FuzzyTerm(ret_func, self.variable)
+
         return ret_term
 
     def __or__(self, other):
@@ -40,9 +44,11 @@ class FuzzyTerm:
         :param other: the term to combine with
         :return: new membership function
         """
-        def ret_func(*d, **mp):
+        def ret_func(*d, **mp) -> float:
             return max(float(self.membership(*d, **mp)), float(other.membership(*d, **mp)))
+
         ret_term = FuzzyTerm(ret_func, self.variable)
+
         return ret_term
 
 
@@ -101,54 +107,22 @@ class FuzzyVariable:
         return FuzzyTerm(membership, self)
 
 
-if __name__ == "__main__":
-    # Create a fuzzy variable
-    fuzzy_temp = FuzzyVariable() # Temperature
+def build_resulting_fuzzy_term(rules: Union[FuzzyRule, Iterable[FuzzyRule]], variable_to_build_for: FuzzyVariable) -> FuzzyTerm:
+    if not isinstance(rules, list):
+        rules = [rules]
 
-    # Define the membership functions
-    hot = TriFunc(20, 25, 50)
-    norm = TriFunc(15, 20, 25)
-    cold = TrapecFunc(0, 5, 10, 20)
+    given_variable_rules = [
+        rule
+        for rule in rules
+        if rule.variable == variable_to_build_for
+    ]
 
-    # Determine the fuzzy terms
-    temp_is_hot = fuzzy_temp.is_(hot)  # The temperature is hot
-    temp_is_norm = fuzzy_temp.is_(norm)  # The temperature is normal
-    temp_is_cold = fuzzy_temp.is_(cold)  # The temperature is cold
+    def resulting_membership_function(x):
+        return max(
+            [
+                rule(x)
+                for rule in given_variable_rules
+            ]
+        )
 
-    # Create an output fuzzy variable
-    fuzzy_blow = FuzzyVariable()  # The speed of the fan
-
-    # and its membership functions
-    slow = TriFunc(0, 0, 750)
-    fast = TriFunc(250, 1000, 1000)
-
-    # Determine the rules
-    blow_slow = FuzzyRule(temp_is_cold | temp_is_norm, fuzzy_blow, slow)  # If the temperature is cold or normal then fan speed is slow
-    blow_fast = FuzzyRule(temp_is_hot, fuzzy_blow, fast)  # If the temperature is hot then fan speed is fast
-
-    # check the rules
-    for temp in range(0, 35, 5):
-        fuzzy_temp.value = temp
-        print()
-        print("Cur temp = {}".format(temp))
-        for freq in range(0, 1001, 100):
-            print("Frequency = {}".format(freq))
-            print("Fan speed = {}".format(max(blow_slow(freq), blow_fast(freq))))
-
-    fuzzy_temp.value = 30  # Let the temperature be 30 degrees
-
-    # Lets find the limits of the variables
-    print("Temp lower limit is {}".format(fuzzy_temp.low_limit))
-    print("Temp upper limit is {}".format(fuzzy_temp.upp_limit))
-    print("Blow lower limit is {}".format(fuzzy_blow.low_limit))
-    print("Blow upper limit is {}".format(fuzzy_blow.upp_limit))
-
-    print("The temperature is {}".format(fuzzy_temp.value))
-    fan_speed = apply_defuzzyfy_COG([blow_slow, blow_fast])  # then the fan speed is
-    print("Defuzzyfied values are {}".format(fan_speed))  # it could be more then one value
-    print("Or defuzzyfied fan speed is {}".format(fuzzy_blow.value))  # and we can check the value of the fan speed
-    # directly
-
-    fuzzy_temp.value = 14  # and now the temp is 13 degrees
-    apply_defuzzyfy_COG([blow_slow, blow_fast])  # let us find the fan speed
-    print("Now the temperature is {}, and the fan speed is {}".format(fuzzy_temp.value, fuzzy_blow.value))  # and print it
+    return FuzzyTerm(resulting_membership_function, variable_to_build_for)
