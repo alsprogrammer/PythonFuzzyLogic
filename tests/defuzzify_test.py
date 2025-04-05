@@ -1,6 +1,8 @@
 from unittest import TestCase
-from fuzzypy.defuzzification import step_generator, prec_generator
-from fuzzypy.variables import FuzzyRule, FuzzyVariable, FuzzyTerm, TriFunc, apply_defuzzyfy_COG
+
+from fuzzypy import TriFunc
+from fuzzypy.defuzzification import step_generator, defuzzify
+from fuzzypy.variables import FuzzyRule, FuzzyVariable, build_resulting_fuzzy_term
 
 
 class TestStepGenerator(TestCase):
@@ -44,34 +46,6 @@ class TestStepGenerator(TestCase):
         self.assertEqual(sum, 11)
 
 
-class TestPrecGenerator(TestCase):
-    def test_prec_gen_nosteps_exception(self):
-        sum = 0
-        with self.assertRaises(ValueError) as context:
-            prec_generator(0, 0, 1).__next__()
-
-        self.assertTrue(isinstance(context.exception, ValueError))
-
-    def test_prec_generator_nosteps_exception(self):
-        sum = 0
-        with self.assertRaises(ValueError) as context:
-            prec_generator(0, 1, 0).__next__()
-
-        self.assertTrue(isinstance(context.exception, ValueError))
-
-    def test_prec_generator_one(self):
-        sum = 0
-        for x in prec_generator(0, 1, 1):
-            sum += 1
-        self.assertEqual(sum, 2)
-
-    def test_prec_generator_many(self):
-        sum = 0
-        for x in prec_generator(0, 10, 1):
-            sum += 1
-        self.assertEqual(sum, 11)
-
-
 class TestCOG(TestCase):
     def test_COG_one_out(self):
         in_fuzz_var = FuzzyVariable()
@@ -81,9 +55,10 @@ class TestCOG(TestCase):
         out_fuzz_memb = TriFunc(-1, 0, 1)
         fuzz_rule = FuzzyRule(in_fuzz_term, out_fuzz_var, out_fuzz_memb)
         in_fuzz_var.value = 0
-        res = apply_defuzzyfy_COG(fuzz_rule)
-        self.assertEqual(len(res), 1)
-        self.assertAlmostEqual(res[0], 0, delta=0.01)
+        fuzzy_res = build_resulting_fuzzy_term(fuzz_rule, out_fuzz_var)
+        res = defuzzify(fuzzy_res)  # the default method is center-of-gravity
+        self.assertAlmostEqual(res, 0, delta=0.01)
+        self.assertAlmostEqual(fuzzy_res.variable.value, 0, delta=0.01)
 
     def test_COG_or_out(self):
         in_fuzz_var = FuzzyVariable()
@@ -94,9 +69,9 @@ class TestCOG(TestCase):
         out_fuzz_memb2 = TriFunc(0, 1, 2)
         fuzz_rule = FuzzyRule(in_fuzz_term, out_fuzz_var, out_fuzz_memb1 | out_fuzz_memb2)
         in_fuzz_var.value = 0
-        res = apply_defuzzyfy_COG(fuzz_rule)
-        self.assertEqual(len(res), 1)
-        self.assertAlmostEqual(res[0], 0, delta=0.01)
+        fuzzy_res = build_resulting_fuzzy_term(fuzz_rule, out_fuzz_var)
+        res = defuzzify(fuzzy_res)  # the default method is center-of-gravity
+        self.assertAlmostEqual(res, 0, delta=0.01)
 
     def test_COG_two_rules_one_var(self):
         in_fuzz_var = FuzzyVariable()
@@ -110,6 +85,6 @@ class TestCOG(TestCase):
         fuzz_rule1 = FuzzyRule(in_fuzz_term1, out_fuzz_var, out_fuzz_memb1)
         fuzz_rule2 = FuzzyRule(in_fuzz_term2, out_fuzz_var, out_fuzz_memb2)
         in_fuzz_var.value = 0
-        res = apply_defuzzyfy_COG([fuzz_rule1, fuzz_rule2])
-        self.assertEqual(len(res), 1)
-        self.assertAlmostEqual(res[0], 0, delta=0.01)
+        fuzzy_res = build_resulting_fuzzy_term([fuzz_rule1, fuzz_rule2], out_fuzz_var)
+        res = defuzzify(fuzzy_res)  # the default method is center-of-gravity
+        self.assertAlmostEqual(res, 0, delta=0.01)
