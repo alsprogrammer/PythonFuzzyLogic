@@ -1,4 +1,4 @@
-__version__ = '1.0'
+__version__ = '1.0.1'
 
 from fuzzypy.defuzzification import defuzzify
 from fuzzypy.memberships import TriFunc, TrapecFunc
