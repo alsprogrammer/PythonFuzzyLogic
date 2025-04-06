@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,9 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5998576-719e-49ab-bea4-bef966ad125e" name="Default" comment="Fix typos.">
+    <list default="true" id="a5998576-719e-49ab-bea4-bef966ad125e" name="Default" comment="chore: update documentation">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/publish.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonFuzzyLogic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonFuzzyLogic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pre-commit-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.pre-commit-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuzzypy.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzypy.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuzzypy.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzypy.egg-info/SOURCES.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +55,38 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="membership_function" />
+        <entry key="$PROJECT_DIR$" value="feature/improvethe-project" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;alsprogrammer&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alsprogrammer/PythonFuzzyLogic.git&quot;,
+    &quot;accountId&quot;: &quot;c0061be9-920b-44b4-9539-7f063235a5ff&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;alsprogrammer&quot;,
+    &quot;repository&quot;: &quot;PythonFuzzyLogic&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="width" value="977" />
@@ -65,12 +97,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunManager" selected="Python tests.Unittests in membership_functions_test.py">
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for defuzzify_test.TestCOG.test_COG_one_out.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for defuzzify_test.TestStepGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for membership_functions_test.MembershipFunctionsTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for membership_functions_test.MembershipFunctionsTestCase.test_skewed_left_trifunc.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for membership_functions_test.MembershipFunctionsTestCase.test_skewed_right_trifunc.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests in Implication_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in defuzzify_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Unittests in membership_functions_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.scratch_92.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.variables (1).executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/aleksandr/Projects/Python/PythonFuzzyLogic&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.scratch_92">
     <configuration default="true" type="ApexTest" factoryName="Apex Test">
       <method />
     </configuration>
@@ -93,19 +140,20 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="memberships" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="scratch_92" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonFuzzyLogic" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fuzzpy" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fuzzpy/memberships.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_92.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,6 +164,7 @@
     </configuration>
     <configuration name="variables" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonFuzzyLogic" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -137,6 +186,7 @@
     </configuration>
     <configuration name="variables_test" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonFuzzyLogic" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -158,6 +208,7 @@
     </configuration>
     <configuration name="Unittests in Implication_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PythonFuzzyLogic" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -172,6 +223,7 @@
     </configuration>
     <configuration name="Unittests in defuzzify_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PythonFuzzyLogic" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -186,6 +238,7 @@
     </configuration>
     <configuration name="Unittests in membership_functions_test.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
       <module name="PythonFuzzyLogic" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -200,6 +253,7 @@
     </configuration>
     <configuration name="Unittests in variables_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PythonFuzzyLogic" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -214,7 +268,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.variables_test" />
-      <item itemvalue="Python.memberships" />
+      <item itemvalue="Python.scratch_92" />
       <item itemvalue="Python.variables" />
       <item itemvalue="Python tests.Unittests in membership_functions_test.py" />
       <item itemvalue="Python tests.Unittests in Implication_test.py" />
@@ -223,13 +277,20 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in defuzzify_test.py" />
         <item itemvalue="Python tests.Unittests in variables_test.py" />
+        <item itemvalue="Python tests.Unittests in defuzzify_test.py" />
         <item itemvalue="Python tests.Unittests in Implication_test.py" />
         <item itemvalue="Python.variables" />
-        <item itemvalue="Python.memberships" />
+        <item itemvalue="Python.scratch_92" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -558,7 +619,23 @@
       <option name="project" value="LOCAL" />
       <updated>1604550250171</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="feat: implement V1.0">
+      <option name="closed" value="true" />
+      <created>1743866765813</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1743866765813</updated>
+    </task>
+    <task id="LOCAL-00047" summary="chore: update documentation">
+      <option name="closed" value="true" />
+      <created>1743866918832</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1743866918832</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -615,11 +692,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Travis CI integration was updated." />
-    <MESSAGE value="Travis CI badge was added." />
     <MESSAGE value="Coveralls was added." />
     <MESSAGE value="Readme file was updated, the test coverage badge was added." />
     <MESSAGE value="The test coverage badge was improved." />
@@ -643,17 +717,9 @@
     <MESSAGE value="Add .idea to .gitignore." />
     <MESSAGE value="Fix temp value." />
     <MESSAGE value="Fix typos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix typos." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="479" y="156" key="SettingsEditor" timestamp="1604549322480">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="479" y="156" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604549322480" />
-    <state x="555" y="257" width="806" height="528" key="Vcs.Push.Dialog.v2" timestamp="1604550268610">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="555" y="257" width="806" height="528" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604550268610" />
+    <MESSAGE value="feat: implement V1.0" />
+    <MESSAGE value="chore: update documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -661,6 +727,11 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/sample/core.py</url>
           <line>2</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_92.py</url>
+          <line>286</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
