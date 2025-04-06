@@ -1,10 +1,14 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.4
 Name: fuzzypy
-Version: 0.4
-Summary: UNKNOWN
+Version: 1.0
 Home-page: https://github.com/alsprogrammer/PythonFuzzyLogic
 Author: Aleksandr Saiapin
 Author-email: alstutor@gmail.com
-License: UNKNOWN
-Description: The library for working with fuzzy logic in python. This library is developed to be used for modelling the fuzzy sets and fuzzy controllers. The library cab be used both in production and for educational purposes. For example please visit the github repository
-Platform: UNKNOWN
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license-file
+
+The library for working with fuzzy logic in python. This library is developed to be used for modelling the fuzzy sets and fuzzy controllers. The library cab be used both in production and for educational purposes. For example please visit the github repository
