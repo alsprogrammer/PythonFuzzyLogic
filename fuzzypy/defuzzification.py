@@ -33,7 +33,20 @@ def center_of_gravity(function_to_evaluate: FuzzyTerm, x_elements: Iterable[floa
     return num / denum if denum else function_to_evaluate.variable.upp_limit
 
 
-def defuzzify(term_to_defuzzify: FuzzyTerm, method: Callable[[FuzzyTerm, Iterable[float]], float] = center_of_gravity):
+def first_maximum(function_to_evaluate: FuzzyTerm, x_elements: Iterable[float]) -> float:
+    arguments = list(x_elements)
+    max_x = arguments[0]
+    max_value = function_to_evaluate(max_x)
+    for current_x in arguments:
+        current_value = function_to_evaluate(current_x)
+        if current_value > max_value:
+            max_value = current_value
+            max_x = current_x
+
+    return max_x
+
+
+def defuzzify(term_to_defuzzify: FuzzyTerm, method: Callable[[FuzzyTerm, Iterable[float]], float] = center_of_gravity, step_generator: Callable[[float, float, int], Iterable[float]] = step_generator):
     variable = term_to_defuzzify.variable
     lower_limit = variable.low_limit
     upper_limit = variable.upp_limit
